@@ -1,0 +1,175 @@
+{
+  "telemetry.telemetryLevel": "off",
+
+  // 01. User Interface
+  "workbench.activityBar.location": "hidden",
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  
+  // 02. Sidebar
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.renderIndentGuides": "always",
+  "window.titleBarStyle": "native",
+  "custom-ui-style.electron": {
+      "titleBarStyle": "hiddenInset", // hiddenInset
+      "trafficLightPosition": {
+          "x": -100, //5 | 10 | 20 | -100
+          "y": -100 // 5 | 16 | -100
+      }
+  },
+  
+  // 10. Guides and highlights
+  // "editor.lineNumbers": "relative",
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.showFoldingControls": "never",
+  // "editor.guides.indentation": false,
+  // "editor.renderWhitespace": "none",
+  // "editor.renderLineHighlight": "none",
+  // "editor.occurrencesHighlight": "off",
+  // "editor.selectionHighlight": false,
+
+  // 11. Scrollbars
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+
+  // 13. misc | final
+  "extensions.ignoreRecommendations": true,
+  "custom-ui-style.stylesheet": {
+    // command palette shadow
+    ".quick-input-widget.show-file-icons": "box-shadow: none !important",
+    // command palette top offset
+    ".quick-input-widget": "top: 25vh !important",
+    // scrollbar inside the command palette
+    ".quick-input-list .scrollbar": "display: none",
+    // invisible small block at the end of the input inside the command palette
+    ".monaco-action-bar.quick-input-inline-action-bar": "display: none",
+    // search panel shadow and rounded corners
+    ".editor-widget.find-widget": "box-shadow: none; border-radius: 4px",
+    // search panel title bar
+    ".quick-input-titlebar": "background: #100B15 !important",
+    // title border
+    ".monaco-workbench .part.editor > .content .editor-group-container > .title.title-border-bottom:after": "display: none",
+    // sidebar
+    // shadow under sidebar title when scrolling
+    ".monaco-scrollable-element > .shadow.top": "display: none",
+    // padding of the sidebar title
+    // ".sidebar .title-label": "display: none",
+    // sidebar border
+    ".sidebar": "border: none !important",
+    // sidebar border when sidebar is in focus
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
+    // border of the focused file in the sidebar
+    ".monaco-list-row.focused": "outline: none !important",
+    // lesson - window
+    // shadow under title when scrolling
+    ".monaco-editor .scroll-decoration": "display: none",
+    // ".title-actions": "display: none !important",
+    ".monaco-workbench .part>.title": "padding: 0 !important",
+    ".monaco-workbench .part>.header-or-footer, .monaco-workbench .part>.title": "height: 22px !important; padding-left: 5px;",
+    ".monaco-workbench .part>.title>.title-actions": "height: 22px !important;",
+    ".monaco-workbench .part>.title>.title-label": "line-height: 22px !important;",
+    ".pane-composite-part": "height: 100% !important",
+    ".monaco-tl-indent": "left: 18.5px !important",
+    ".extensions-viewlet>.header": "padding: 6px !important",
+    "[aria-label='Chat Section']": "display: none !important",
+  },
+
+  // 22.01.25
+  // OLD
+  //Breadcrumbs
+  //Определяет, должен ли редактор отображать управляющие символы.
+  "editor.renderControlCharacters": false,
+  "editor.bracketPairColorization.enabled": false,
+  "workbench.editor.enablePreview": false,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "files.associations": {
+    "*.vue": "vue"
+  },
+  "files.autoSave": "onFocusChange",
+  "window.density.editorTabHeight": "compact",
+  "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-auto",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  // Enable smooth scrolling in the editor
+  "editor.smoothScrolling": true,
+  "editor.glyphMargin": false,
+  "editor.accessibilitySupport": "off",
+  // # advancedNewFile
+  "advancedNewFile.exclude": {
+      "node_modules": true,
+      "node_modules_electron": true,
+      "dev": true,
+      "dist": true
+  },
+  "advancedNewFile.showInformationMessages": true,
+  "advancedNewFile.convenienceOptions": [
+      "last",
+      "current",
+      "root"
+  ],
+  // "advancedNewFile.convenienceOptions": ["last", "current", "root"]
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "always"
+  },
+  "eslint.validate": [
+      "javascript",
+      "typescript"
+  ],
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false,
+  "indentRainbow.indicatorStyle": "light",
+  "indentRainbow.lightIndicatorStyleLineWidth": 1,
+  "indentRainbow.colors": [
+      "rgba(255,255,64,0.3)",
+      "rgba(127,255,127,0.3)",
+      "rgba(255,127,255,0.3)",
+      "rgba(79,236,236,0.3)"
+  ],
+  // "workbench.tree.indent": 6,
+  "explorer.compactFolders": false,
+  "editor.stickyScroll.enabled": false,
+  "git.allowNoVerifyCommit": false,
+  "git.blame.statusBarItem.enabled": true,
+  "git.blame.editorDecoration.enabled": true,
+  "workbench.editorAssociations": {
+    "*.vsix": "default"
+  },
+  "editor.linkedEditing": true,
+  "svelte.enable-ts-plugin": true,
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "stylelint.validate": [
+    "css",
+    "less",
+    "postcss",
+    "svelte",
+    "scss"
+  ],
+  "git.confirmSync": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontSize": 13,
+  "window.zoomLevel": 0.2,
+  "workbench.colorTheme": "Default Light Modern",
+  "window.systemColorTheme": "auto",
+  "window.autoDetectColorScheme": true,
+  "workbench.editor.showTabs": "none",
+}
+  
