@@ -72,11 +72,12 @@
     ".monaco-workbench .part>.title": "padding: 0 !important",
     ".monaco-workbench .part>.header-or-footer, .monaco-workbench .part>.title": "height: 22px !important; padding-left: 5px;",
     ".monaco-workbench .part>.title>.title-actions": "height: 22px !important;",
-    ".monaco-workbench .part>.title>.title-label": "line-height: 22px !important;",
+    ".monaco-workbench .part>.title>.title-label": "line-height: 22px !important; padding-left: 5px !important;",
     ".pane-composite-part": "height: 100% !important",
     ".monaco-tl-indent": "left: 18.5px !important",
     ".extensions-viewlet>.header": "padding: 6px !important",
     "[aria-label='Chat Section']": "display: none !important",
+    ".open-editors .monaco-list .monaco-list-row": "padding-left: 0 !important",
   },
 
   // 22.01.25
@@ -171,5 +172,7 @@
   "window.systemColorTheme": "auto",
   "window.autoDetectColorScheme": true,
   "workbench.editor.showTabs": "none",
+  "chat.commandCenter.enabled": false,
+  "window.customTitleBarVisibility": "never",
 }
   
