@@ -44,11 +44,6 @@
   },
   {
     "key": "shift+cmd+t",
-    "command": "git.pullRef",
-    "when": "scmProvider == 'git'"
-  },
-  {
-    "key": "shift+cmd+t",
     "command": "-workbench.action.reopenClosedEditor"
   },
   {
@@ -81,11 +76,59 @@
     "when": "workbench.panel.chat.view.copilot.active"
   },
   {
+    // открыть Open Editors в правой панели
     "key": "shift+cmd+t",
-    "command": "workbench.action.toggleAuxiliaryBar"
+    "command": "workbench.files.action.focusOpenEditorsView",
+    "when": "!(auxiliaryBarVisible && focusedView == 'workbench.explorer.openEditorsView')"
+  },
+  {
+    // уже на Open Editors — прячем правую панель
+    "key": "shift+cmd+t",
+    "command": "workbench.action.toggleAuxiliaryBar",
+    "when": "auxiliaryBarVisible && focusedView == 'workbench.explorer.openEditorsView'"
   },
   {
     "key": "alt+cmd+b",
     "command": "-workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "cmd+k e",
+    "command": "-workbench.files.action.focusOpenEditorsView",
+    "when": "workbench.explorer.openEditorsView.active"
+  },
+  {
+    // открыть Claude Code в правой панели
+    "key": "shift+cmd+a",
+    "command": "claude-vscode.sidebar.open",
+    "when": "!claude-vscode.sideBarActive"
+  },
+  {
+    // уже на Claude Code — прячем правую панель
+    "key": "shift+cmd+a",
+    "command": "workbench.action.toggleAuxiliaryBar",
+    "when": "claude-vscode.sideBarActive"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "editorScroll",
+    "when": "editorTextFocus",
+    "args": {
+      "to": "down",
+      "by": "halfPage"
+    }
+  },
+  {
+    "key": "ctrl+u",
+    "command": "editorScroll",
+    "when": "editorTextFocus",
+    "args": {
+      "to": "up",
+      "by": "halfPage"
+    }
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "workbench.view.extension.claude-dev-ActivityBar",
+    "when": "viewContainer.workbench.view.extension.claude-dev-ActivityBar.enabled"
   }
 ]
