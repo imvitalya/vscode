@@ -31,6 +31,7 @@ streetsidesoftware.code-spell-checker@4.9.3
 streetsidesoftware.code-spell-checker-russian@2.2.4
 stylelint.vscode-stylelint@2.2.1
 subframe7536.custom-ui-style@0.7.2
+surranov.tab-tree@0.0.8
 svelte.svelte-vscode@110.3.1
 t3m1n4l.amoled-github@1.0.4
 typescriptteam.native-preview@0.20260617.2

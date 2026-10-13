@@ -109,6 +109,18 @@
     "when": "claude-vscode.sideBarActive"
   },
   {
+    // открыть Tab Tree в правой панели
+    "key": "shift+cmd+r",
+    "command": "tabTree.focus",
+    "when": "!(auxiliaryBarVisible && focusedView == 'tabTree')"
+  },
+  {
+    // уже на Tab Tree — прячем правую панель
+    "key": "shift+cmd+r",
+    "command": "workbench.action.toggleAuxiliaryBar",
+    "when": "auxiliaryBarVisible && focusedView == 'tabTree'"
+  },
+  {
     "key": "ctrl+d",
     "command": "editorScroll",
     "when": "editorTextFocus",
