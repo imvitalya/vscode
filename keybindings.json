@@ -97,16 +97,14 @@
     "when": "workbench.explorer.openEditorsView.active"
   },
   {
-    // открыть Codex в правой панели
     "key": "shift+cmd+a",
-    "command": "chatgpt.openSidebar",
-    "when": "!(auxiliaryBarVisible && focusedView == 'chatgpt.sidebarSecondaryView')"
+    "command": "chatgpt.openSidebar"
   },
   {
-    // уже на Codex — прячем правую панель
+    // скрыть боковую панель, если в ней открыт Codex
     "key": "shift+cmd+a",
-    "command": "workbench.action.toggleAuxiliaryBar",
-    "when": "auxiliaryBarVisible && focusedView == 'chatgpt.sidebarSecondaryView'"
+    "command": "workbench.action.closeAuxiliaryBar",
+    "when": "auxiliaryBarVisible && activeAuxiliary == 'workbench.view.extension.codexSecondaryViewContainer'"
   },
   {
     // открыть Tab Tree в правой панели
