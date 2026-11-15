@@ -97,16 +97,16 @@
     "when": "workbench.explorer.openEditorsView.active"
   },
   {
-    // открыть Claude Code в правой панели
+    // открыть Codex в правой панели
     "key": "shift+cmd+a",
-    "command": "claude-vscode.sidebar.open",
-    "when": "!claude-vscode.sideBarActive"
+    "command": "chatgpt.openSidebar",
+    "when": "!(auxiliaryBarVisible && focusedView == 'chatgpt.sidebarSecondaryView')"
   },
   {
-    // уже на Claude Code — прячем правую панель
+    // уже на Codex — прячем правую панель
     "key": "shift+cmd+a",
     "command": "workbench.action.toggleAuxiliaryBar",
-    "when": "claude-vscode.sideBarActive"
+    "when": "auxiliaryBarVisible && focusedView == 'chatgpt.sidebarSecondaryView'"
   },
   {
     // открыть Tab Tree в правой панели

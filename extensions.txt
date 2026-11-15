@@ -1,5 +1,3 @@
-andrepimenta.claude-code-chat@2.2.0
-anthropic.claude-code@2.1.296
 chadalen.vscode-jetbrains-icon-theme@2.40.0
 cipchk.cssrem@4.1.1
 continue.continue@1.2.24
@@ -21,6 +19,7 @@ koalamer.workspace-in-status-bar@1.1.2
 media-compressor.media-compressor@1.5.5
 mikestead.dotenv@1.0.1
 oderwat.indent-rainbow@8.3.1
+openai.chatgpt@26.1111.21308
 qwenlm.qwen-code-vscode-ide-companion@0.18.1
 redpredator8.cursor-oled-1600nits@0.9.0
 redwan-hossain.skillavid-pure-black@5.0.0

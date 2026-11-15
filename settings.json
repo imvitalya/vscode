@@ -264,7 +264,5 @@
   "js/ts.experimental.useTsgo": false,
   "workbench.preferredDarkColorTheme": "Mayukai Mirage Gruvbox Darktooth",
   "editor.largeFileOptimizations": false,
-  "claudeCode.preferredLocation": "sidebar", //true
-  "claudeCode.claudeProcessWrapper": "/Users/vitshemetov/.o3-cli/o3_plugin_agent/vscode-wrapper/claude-o3-wrapper.sh",
   "workbench.experimental.modernUI": false,
 }
